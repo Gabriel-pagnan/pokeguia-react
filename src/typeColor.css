@@ -1,0 +1,142 @@
+/*cores habilidades*/
+.steel {
+	background-image: url('../public/img/steel.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #9a56d2c6;
+}
+
+.fire {
+	background-image: url('../public/img/fire.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e35125d3;
+}
+
+.grass {
+	background-image: url('../public/img/grass.png');
+	background-position: calc(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #3fbd049b;
+}
+
+.electric {
+	background-image: url('../public/img/electric.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #f2cf21e2;
+}
+
+.water{
+	background-image: url('../public/img/water.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background: #4949efca;
+}
+.ice {
+	background-image: url('../public/img/ice.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #3399c8c3;
+}
+
+.ground {
+	background-image: url('../public/img/ground.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #72502dd3;
+}
+
+.rock {
+	background-image: url('../public/img/rock.png');
+	background-position: calc(110px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #b7a596;
+}
+
+.fairy {
+	background-image: url('../public/img/fairy.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #f97af5c4;
+}
+
+.poison {
+	background-image: url('../public/img/poison.png');
+	background-position: calc(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #481761bc;
+}
+
+.bug {
+	background-image: url('../public/img/bug.png');
+	background-position: calc(140px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #3c972ebc;
+}
+
+.dragon {
+	background-image: url('../public/img/dragon.png');
+	background-position: calc(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #e92222b5;
+}
+
+.psychic {
+	background-image: url('../public/img/psychic.png');
+	background-position: calc(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #ec19eca2;
+}
+
+.flying {
+	background-image: url('../public/img/flying.png');
+	background-position: calc(130px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #17c294be;
+}
+
+.fighting {
+	background-image: url('../public/img/fighter.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fb631cca;
+}
+
+.normal {
+	background-image: url('../public/img/normal.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #9e9c9c;
+}
+
+.dark{
+	background-image: url('../public/img/dark.png');
+	background-position: calc(120px);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-color: #201f1f;
+}
+.ghost{
+	background-image: url('../public/img/ghost.png');
+	background-position: calc(100px);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background: #e98282;
+}

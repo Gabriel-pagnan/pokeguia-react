@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { Dialog, DialogContent, DialogTitle, Slide, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { forwardRef, useCallback, useEffect, useState } from "react";
+import { forwardRef,  useEffect, useState } from "react";
 import { PokemonService } from "../services/PokemonService";
 import '../typeColor.css'
 import Carousel from 'react-material-ui-carousel'
@@ -14,15 +14,13 @@ const Transition = forwardRef(function Transition(props, ref) {
 export default function Modal({ ...props }) {
     const [data, setData] = useState([]);
     const types = data.types?.map(typeInfo => typeInfo.type.name);
-    const count = useCallback(() => {
-        return 1
-    }, [])
+    
 
     useEffect(() => {
         PokemonService.getPokemon(props.name).then((result) => {
             setData(result.data);
         })
-    }, [count, props.name])
+    }, [props.name])
 
     return (
         <div>
@@ -57,9 +55,9 @@ export default function Modal({ ...props }) {
 
                     <DialogContent>
                         {data.stats?.map((stat, index) => (
-                            <Box key={index}>
-                                <Box className={types} width={stat.base_stat + 10} height={30} position='absolute' sx={{borderRadius: '3px'}}/>
-                                <Typography ml={2} position='relative' zIndex={1} variant="subtitle1" mt={2} >{stat.stat.name}: {stat.base_stat}</Typography>
+                            <Box key={index} mt={1}>
+                                <Typography  zIndex={1} mb={2} variant="overline" mt={2} >{stat.stat.name}: {stat.base_stat}</Typography>
+                                <Box className={types} width={stat.base_stat} height={8}  sx={{borderRadius: '20px'}}/>
                             </Box>
                         ))}
                     </DialogContent>

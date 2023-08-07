@@ -13,7 +13,7 @@ const getPokemon = async (pokemon) => {
 
 const getAll = async(limit) => {
     try {
-        const data = await Api.get(`pokemon/?limit=${8 + limit}`)
+        const data = await Api.get(`pokemon/?limit=${8 + limit}&offset=0`)
         if(data) {
             return data;
         }

@@ -1,6 +1,6 @@
 import { Box, Divider, FormControl, IconButton, InputBase, InputLabel, MenuItem, Paper, Select } from '@mui/material';
 import { SearchRounded, CatchingPokemonRounded } from '@mui/icons-material';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDebounce } from '../hooks/useDebounce';
 import { PokemonService } from '../services/PokemonService';
 import Cards from './Card';
@@ -13,9 +13,7 @@ export default function Pokedex() {
     const { debounce } = useDebounce(400);
     const [_, setLoading] = useState(false);
     const [val, setVal] = useState('');
-    const count = useCallback(() => {
-        return 1
-    }, [])
+    
     
     const handleChange = (event) => {
         setVal(event.target.value);
@@ -33,7 +31,7 @@ export default function Pokedex() {
         PokemonService.getAll(val).then((result) => {
             setData(result.data.results);
         })
-    }, [count, val])
+    }, [val])
 
     return (
         <Box sx={{width: '100%'}} display='flex' alignItems='center'  flexDirection='column' mt={5}>
